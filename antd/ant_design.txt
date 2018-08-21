@@ -1,0 +1,13 @@
+关于ant Design插件的运用
+经过多个例子的运用，一般常规引入错误表现为
+因为是typeScript转为javaScript，多数为语法问题
+1.首先是state应该放在
+	constructor(){
+		super()
+		this.state = {}
+	}
+2.方法。TS方法表现为箭头函数，而JS则需要改为
+例如: add = () =>{} 改为	add(){}
+3.引用方法时没有绑定bind(this)
+	要想避免一步步操作，可以在constructor中 
+	例如 this.add = this.add.bind(this)

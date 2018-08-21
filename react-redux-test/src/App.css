@@ -1,0 +1,29 @@
+.handle{
+    width: 300px;
+    text-align: center;
+    padding: 12px;
+    box-sizing: border-box;
+    display: flex;
+}
+.handle input{
+    flex: 1;
+}
+.handle button{
+    width: 60px;
+}
+
+.list{
+    width: 300px;
+    border: 1px solid #999;
+    border-radius: 10px;
+    padding: 10px;
+}
+.list li{
+    list-style: none;
+    border-bottom: 1px solid #999;
+}
+.list li span{
+    float: right;
+    color: #ddd;
+    padding: 0 10px;
+}
